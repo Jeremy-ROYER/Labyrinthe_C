@@ -49,7 +49,7 @@ int main(){
 
 
     /* Présentation du jeu */
-    printf("Bienvenue dans\n");
+    printf("Bienvenue dans\n\n");
     printf("%s",en_tete);
     printf("Les règles sont simples, vous devez sortir du labyrinthe.\n");
     printf("Pour se déplacer utiliser les touches Z S Q D pour respectivement Haut Bas Gauche Droite (comme beaucoup de jeu)\n");
@@ -116,9 +116,9 @@ int main(){
 
             if( joueur[0] == arrivee[0] && joueur[1] == arrivee[1] ){
                 printf("Bravo, vous y êtes arrivés !\n");
-                printf("J'avoue, je doutais de vous.\n");
+                printf("J'avoue que je doutais de vous.\n");
                 if(difficulte < 6)
-                    printf("J'espère vous revoir bientôt sur un niveau plus dur, c'était un peu simple là !\n");
+                    printf("J'espère vous revoir bientôt sur un niveau plus difficile, c'était un peu simple là !\n");
                 else if(difficulte == 7)
                     printf("La prochaine fois faites le en une seule fois, trop simple de se reposer.\n");
                 break;
