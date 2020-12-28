@@ -17,13 +17,13 @@ File : affichage.h
 
 ==========================================================================
 
-Fichier contenant le prototype de la  fonction d'affichage du labyrinthe.
+Fichier contenant le prototype de la fonction d'affichage du labyrinthe.
 
 ========================================================================*/
 
 #ifndef __AFFICHAGE_H__
 #define __AFFICHAGE_H__
 
-void afficheLabyrinthe(char labyTab[TAILLE_X][TAILLE_Y]);
+void afficheLabyrinthe(char labyTab[TAILLE_X][TAILLE_Y], int joueur[2]);
 
 #endif

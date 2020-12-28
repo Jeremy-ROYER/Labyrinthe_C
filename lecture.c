@@ -29,15 +29,13 @@ fichier texte le contenant.
 /* Construit le tableau de caractère contenant le labyrinthe 
 	et récupère les coordonnées de départ et d'arrivée */
 
-/* La taille du labyrinthe est défini en début de fichier */
-
 /* La fonction retourne 1 si tout s'est bien passé */
 
 int construction(FILE* labyText, char labyTab[TAILLE_X][TAILLE_Y], int depart[2], int arrivee[2]){
 
 	/* Vérifie si le fichier est bien ouvert */
 	if(labyText==NULL){
-		printf("Erreur lors de l'ouverture du fichier\n");
+		printf("Erreur lors de l'ouverture du fichier\n\n");
 		return 0;
 	}
 

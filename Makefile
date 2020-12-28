@@ -29,7 +29,7 @@ LIBS =
 LIBSDIR =
 
 # fichiers du projet
-SRC = affichage.c lecture.c labyrinthe.c
+SRC = affichage.c lecture.c joueur.c labyrinthe.c
 OBJ = $(SRC:.c=.o)
 EXEC = run.out
 
@@ -40,6 +40,7 @@ all: $(EXEC)
 # dépendance des .h
 affichage.o: affichage.h
 lecture.o: affichage.h lecture.h
+joueur.o: affichage.h lecture.h joueur.h
 labyrinthe.o: affichage.h lecture.h
 # règles de compilation
 %.o: %.c
