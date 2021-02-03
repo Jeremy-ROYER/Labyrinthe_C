@@ -25,8 +25,8 @@ labyrinthe
 #ifndef __LECTURE_H__
 #define __LECTURE_H__
 
-#define TAILLE_X 20
-#define TAILLE_Y 10
+#define TAILLE_X 42
+#define TAILLE_Y 21
 
 int construction(FILE* labyText, char labyTab[TAILLE_X][TAILLE_Y], int depart[2], int arrivee[2]);
 

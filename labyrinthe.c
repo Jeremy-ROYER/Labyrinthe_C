@@ -56,8 +56,8 @@ int main(){
     printf("Ce sera répété si vous avez une petite mémoire.\n");
     printf("La sortie du labyrinthe se trouve au point A \n\n");
 
-    printf("Choisissez la difficulté : (de 1 à 6)\n");
-    printf("Tapez 7 si vous aviez sauvegardé une partie en cours\n");
+    printf("Choisissez la difficulté : (de 1 à 5)\n");
+    printf("Tapez 6 si vous aviez sauvegardé une partie en cours\n");
     scanf("%i",&difficulte);
 
     /* Ouverture du fichier correspondant à la difficulté */
@@ -83,10 +83,6 @@ int main(){
             labyText = fopen ("laby_dif5.txt","r");
             break;
         case 6 :
-            printf("\nTu as du cran, bonne chance !\n\n\n");
-            labyText = fopen ("laby_dif6.txt","r");
-            break;
-        case 7 :
             printf("\nN'abandonne pas comme la dernière fois, bonne chance !\n\n\n");
             labyText = fopen ("laby_sauv.txt","r");
             break;
@@ -98,7 +94,7 @@ int main(){
     /* Vérifie si le labyrinthe a bien été ouvert et construit */
     if(construction(labyText,labyTab,depart,arrivee) ){
 
-        if(difficulte != 7){
+        if(difficulte != 6){
             /* Initialisation position joueur */
             joueur[0] = depart[0];
             joueur[1] = depart[1];
@@ -117,9 +113,9 @@ int main(){
             if( joueur[0] == arrivee[0] && joueur[1] == arrivee[1] ){
                 printf("Bravo, vous y êtes arrivés !\n");
                 printf("J'avoue que je doutais de vous.\n");
-                if(difficulte < 6)
+                if(difficulte < 5)
                     printf("J'espère vous revoir bientôt sur un niveau plus difficile, c'était un peu simple là !\n");
-                else if(difficulte == 7)
+                else if(difficulte == 6)
                     printf("La prochaine fois faites le en une seule fois, trop simple de se reposer.\n");
                 break;
             }

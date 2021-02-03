@@ -43,7 +43,7 @@ int actionJoueur(char labyTab[TAILLE_X][TAILLE_Y], int joueur[2]){
 	printf("Déplacement : Z --> haut ; S --> bas ; Q --> gauche ; D --> droite\n");
 	printf("Sauvegarder et Quitter : E\n");
 	scanf(" %c",&actionChoisie);
-
+	printf("\n");
 	/* Le joueur souhaite se déplacer */
 
 	if(actionChoisie == 'z' || actionChoisie == 'Z'){
@@ -68,7 +68,7 @@ int actionJoueur(char labyTab[TAILLE_X][TAILLE_Y], int joueur[2]){
 
 		/* Vérifie si le déplacement est autorisé */
 		if(labyTab[ positionfuture[0] ][ positionfuture[1] ] == '#'){
-			printf("Déplacement non autorisé, n'essayez pas de tricher !\n");
+			printf("Déplacement non autorisé, n'essayez pas de tricher !\n\n");
 			return 0;
 		}
 
@@ -84,7 +84,7 @@ int actionJoueur(char labyTab[TAILLE_X][TAILLE_Y], int joueur[2]){
 
 		/* Vérifie si le déplacement est autorisé */
 		if(labyTab[ positionfuture[0] ][ positionfuture[1] ] == '#'){
-			printf("Déplacement non autorisé, n'essayez pas de tricher !\n");
+			printf("Déplacement non autorisé, n'essayez pas de tricher !\n\n");
 			return 0;
 		}
 
@@ -100,7 +100,7 @@ int actionJoueur(char labyTab[TAILLE_X][TAILLE_Y], int joueur[2]){
 
 		/* Vérifie si le déplacement est autorisé */
 		if(labyTab[ positionfuture[0] ][ positionfuture[1] ] == '#'){
-			printf("Déplacement non autorisé, n'essayez pas de tricher !\n");
+			printf("Déplacement non autorisé, n'essayez pas de tricher !\n\n");
 			return 0;
 		}
 
